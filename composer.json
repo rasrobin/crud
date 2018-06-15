@@ -1,6 +1,6 @@
 {
     "name": "rasrobin/crud",
-    "description": "A crud package to create crud pages fast",
+    "description": "Small framework for creating CRUD pages programmatically.",
     "type": "laravel-package",
     "license": "MIT",
     "authors": [
@@ -16,17 +16,18 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.1.2-dev"
+            "dev-master": "0.2.0-dev"
         },
         "laravel": {
             "providers": [
-                "Laravel\\Tinker\\TinkerServiceProvider"
+                "Rasrobin\\Crud\\CrudServiceProvider"
             ]
         }
     },
     "minimum-stability": "dev",
     "require": {
         "php": ">=7",
-        "laravelcollective/html": ">5.4"
+        "laravelcollective/html": "^5.4",
+        "nesbot/carbon": "^1.30"
     }
 }
