@@ -5,17 +5,28 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "rasrobin",
+            "name": "Robin Spoelstra",
             "email": "robin@raswebdesign.nl"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Models\\": "src/Models/"
+            "Rasrobin\\Crud\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.1"
+        },
+        "laravel": {
+            "providers": [
+                "Laravel\\Tinker\\TinkerServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
     "require": {
-        "php": ">=7"
+        "php": ">=7",
+        "laravelcollective/html": ">5.4"
     }
 }
