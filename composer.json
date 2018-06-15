@@ -27,7 +27,6 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7",
-        "laravelcollective/html": "^5.4",
-        "nesbot/carbon": "^1.30.0"
+        "laravelcollective/html": "^5.4"
     }
 }

@@ -11,7 +11,6 @@ The html contains classes to make it instantly look okay with default Bootstrap.
 ###1 Dependencies
 * Laravel 5.6.x
 * Laravel Collective html 5.4
-* Nesbot Carbon
 * jQuery 3.x
 
 ###2 Installation
