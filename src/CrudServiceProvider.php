@@ -13,6 +13,8 @@ class CrudServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->loadViewsFrom(__DIR__.'/views', 'rasrobin\crud');
+
         $this->publishes([
             __DIR__.'/assets/js' => public_path('js'),
         ], 'public');
@@ -25,10 +27,6 @@ class CrudServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //load routes
-        //include __DIR__ . '/routes.php';
-
-        //load views
-        $this->loadViewsFrom(__DIR__.'/views/', 'rasrobin\crud');
+        //
     }
 }
