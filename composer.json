@@ -1,0 +1,21 @@
+{
+    "name": "rasrobin/crud",
+    "description": "A crud package to create crud pages fast",
+    "type": "laravel-package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rasrobin",
+            "email": "robin@raswebdesign.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Models\\": "src/Models/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7"
+    }
+}
