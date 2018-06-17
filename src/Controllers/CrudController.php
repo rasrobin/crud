@@ -25,7 +25,7 @@ Abstract class CrudController extends Controller
      * describes the number of entities shown on one page.
      * Can be overwritten if you set $this->paginate.
      */
-    const PAGINATE = 3;
+    const PAGINATE = 12;
     const DEFAULT_ORDER_BY = 'created_at';
 
     /**
