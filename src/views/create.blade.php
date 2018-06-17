@@ -3,16 +3,20 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <h1>@yield('title', $model::crudTitle())</h1>
+            <div class="col m-b-md">
+                <h1>@yield('title', $model::crudTitle())</h1>
+            </div>
         </div>
         <div class="row">
-            <h2>Add</h2>
-            {{ Form::open(['route' => $routeResource . '.store']) }}
+            <div class="col">
+                <h2>Add</h2>
+                {{ Form::open(['route' => $routeResource . '.store']) }}
 
-            @include("{$model::crudFormTemplate()}")
+                @include("{$model::crudFormTemplate()}")
 
-            {{ Form::submit('Add') }}
-            {{ Form::close() }}
+                {{ Form::submit('Add') }}
+                {{ Form::close() }}
+            </div>
         </div>
     </div>
 @stop

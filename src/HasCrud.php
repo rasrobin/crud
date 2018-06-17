@@ -7,10 +7,9 @@ use Illuminate\Contracts\Routing\UrlRoutable;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Http\Request;
-use Stripe\JsonSerializable;
 use \ArrayAccess;
 
-interface HasCrud extends ArrayAccess, Arrayable, Jsonable, JsonSerializable, QueueableEntity, UrlRoutable
+interface HasCrud extends ArrayAccess, Arrayable, Jsonable, QueueableEntity, UrlRoutable
 {
     /**
      * Name of a single entity of the model
