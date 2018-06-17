@@ -10,7 +10,7 @@
             ?>
             @if($column->getId() === \Rasrobin\Crud\Column::ID or !$column->isDefaultColumn())
                 <th
-                        class="{{ implode(' ', $column->getClasses()) }}"
+                        class="border-top-0 {{ implode(' ', $column->getClasses()) }}"
                         data-id="{{ $column->getId() }}"
                         data-order="{{ $column->getOrder() }}"
                         data-new-order="{{ $column->getNewOrder() }}"

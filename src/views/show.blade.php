@@ -21,7 +21,7 @@
                     @endforeach
                 </dl>
                 <div class="overview-link">
-                    <a href="{{ route($routeResource . '.edit', $entity->id) }}">Edit</a>
+                    <a class="btn btn-outline-primary" role="button" href="{{ route($routeResource . '.edit', $entity->id) }}">Edit</a>
                 </div>
             </div>
         </div>

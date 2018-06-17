@@ -6,7 +6,7 @@
             <div class="col">
                 <h1>@yield('title', $model::crudTitle())</h1>
                 <p>
-                    <a class="btn btn-default" href="{{ route($routeResource . '.create') }}" role="button">
+                    <a class="btn btn-outline-primary mt-2" href="{{ route($routeResource . '.create') }}" role="button">
                         Add {{ $model::crudEntityName() }}
                     </a>
                 </p>
