@@ -1,4 +1,4 @@
-# CRUD coding framework by Rasrobin
+# Small extendable CRUD coding framework
 **Version 0.2**
 
 The goal of this package is to provide a small extendable framework to create overview
@@ -26,9 +26,40 @@ Run the following command to make the included javascript assets available.
 php artisan vendor:publish --tag=public --force
 ```
 
-### Default crud pages.
-
-### Creating a new entity.
+### Creating a new entity with CRUD.
+* Create your migration file and create a table with it.
+* Create a Model for your entity and have it implement ```HasCrud```.
+* Create a controller and have it extend ```CrudController```.
+* In the controller, set the ```public $model``` tot the Model you created.
+```
+/**
+ * Class BlogController
+ */
+class BlogController extends CrudController
+{
+    /**
+     * @var HasCrud $model
+     */
+    public $model = Blog::class;
+}
+```
+* Create a view with the required form fields and have
+```crudFormTemplate()``` in your Model return it's path/name.
+```
+/**
+ * {@inheritdoc}
+ */
+public static function crudFormTemplate()
+{
+    return 'rasrobin\blog::blog_form';
+}
+```
+* Create a route for your controller. An example:
+```
+Route::group(['prefix' => 'admin', 'middleware' => ['web', 'auth']], function(){
+    Route::resource('blog', 'Rasrobin\Blog\Controllers\BlogController');
+});
+```
 
 ### Default columns.
 
