@@ -20,7 +20,7 @@
                     </a>
                 </th>
             @else
-                <th width="60">&nbsp;</th>
+                <th class="border-top-0" width="60">&nbsp;</th>
             @endif
         @endforeach
     </tr>
