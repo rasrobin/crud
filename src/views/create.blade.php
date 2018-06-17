@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col m-b-md">
+            <div class="col mb-5">
                 <h1>@yield('title', $model::crudTitle())</h1>
             </div>
         </div>
