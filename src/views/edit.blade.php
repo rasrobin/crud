@@ -11,7 +11,11 @@
         <div class="row">
             <div class="col">
                 <h3>Edit {{ $entity->getName() }}</h3>
-                {{ Form::model($entity, ['method' => 'Patch', 'route' => [$routeResource . '.update', $entity->id]]) }}
+                {{ Form::model($entity, [
+                    'method' => 'Patch',
+                    'route' => [$routeResource . '.update', $entity->id],
+                    'enctype' => 'multipart/form-data'
+                ]) }}
 
                 @include("{$model::crudFormTemplate()}")
 
